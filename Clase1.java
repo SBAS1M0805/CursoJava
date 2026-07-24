@@ -15,7 +15,14 @@ public class Carro {
 
     //metodos
     public void acelerar (int velocidadActual, int velocidadFinal) {
+        int velocidad = velocidadActual;
+        //ciclo
+        while (velocidad < velocidadFinal) {
+            velocidad=velocidad+20;
+            System.out.println("Acelerando! velocidad actual= " + velocidad);
+        }
         
+
     }
         
 }
