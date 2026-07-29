@@ -68,11 +68,13 @@ public class Carro {
 
     //CONSTRUCTORES
     public Carro (String entradaPlaca, String entradaMarca, String entradaColor, int entradaCantPasajeros, int entradaModelo) {
-        placa = entradaPlaca;
-        marca = entradaMarca;
-        color = entradaColor;
-        cantidadPasajeros = entradaCantPasajeros;
-        modelo = entradaModelo;
+        this.placa = entradaPlaca;
+        this.marca = entradaMarca;
+        this.color = entradaColor;
+        this.cantidadPasajeros = entradaCantPasajeros;
+        this.modelo = entradaModelo;
+
+        //En la herencia si la clase padre o superclase tiene un constructor la clase hija debe tenerlo
 
     }
 }
