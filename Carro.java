@@ -21,7 +21,7 @@ public class Carro {
     public static void main(String[] args) {
         System.out.println("Hola Mundo");
 
-        Carro miCarro = new Carro();
+        Carro miCarro = new Carro("JSH876", "Toyota", "Rojo", 5, 2020);
 
         miCarro.acelerar(0, 100);
     }
@@ -32,5 +32,47 @@ public class Carro {
 
     public String getColor() {
         return color;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public int getCantidadPasajeros() {
+        return cantidadPasajeros;
+    }
+
+    public int getModelo() {
+        return modelo;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public void setCantidadPasajeros(int cantidadPasajeros) {
+        this.cantidadPasajeros = cantidadPasajeros;
+    }
+
+    public void setModelo(int modelo) {
+        this.modelo = modelo;
+    }
+
+    //CONSTRUCTORES
+    public Carro (String entradaPlaca, String entradaMarca, String entradaColor, int entradaCantPasajeros, int entradaModelo) {
+        placa = entradaPlaca;
+        marca = entradaMarca;
+        color = entradaColor;
+        cantidadPasajeros = entradaCantPasajeros;
+        modelo = entradaModelo;
+
     }
 }

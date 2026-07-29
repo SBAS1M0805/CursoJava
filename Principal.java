@@ -2,7 +2,7 @@ public class Principal {
 
     public static void main(String[] args) {
 
-        Carro objetoCarro = new Carro();
+        Carro objetoCarro = new Carro("JSH876", "Toyota", "Rojo", 5, 2020);
 
         objetoCarro.setColor("azul");
 
