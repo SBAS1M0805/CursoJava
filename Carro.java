@@ -5,54 +5,31 @@ public class Carro {
     private String marca;
     private int cantidadPasajeros;
     private String color;
-    private int modelo;
+    int modelo;
 
-    // Nuevos atributos
-    private boolean lucesEncendidas;
-    private int gasolina = 100;
-
-    // Método para acelerar
+    // Método
     public void acelerar(int velocidadActual, int velocidadFinal) {
         int velocidad = velocidadActual;
 
         while (velocidad < velocidadFinal) {
             velocidad = velocidad + 20;
-            System.out.println("Acelerando... velocidad actual = " + velocidad);
+            System.out.println("Acelerando! velocidad actual = " + velocidad);
         }
     }
 
-    // Método para frenar
-    public void frenar(int velocidadActual) {
-        int velocidad = velocidadActual;
+    // Método principal
+    public static void main(String[] args) {
+        System.out.println("Hola Mundo");
 
-        while (velocidad > 0) {
-            velocidad = velocidad - 20;
+        Carro miCarro = new Carro();
 
-            if (velocidad < 0) {
-                velocidad = 0;
-            }
-
-            System.out.println("Frenando... velocidad actual = " + velocidad);
-        }
+        miCarro.acelerar(0, 100);
     }
 
-    // Método para encender las luces
-    public void encenderLuces() {
-        lucesEncendidas = true;
-        System.out.println("Las luces están encendidas.");
+    public void setColor(String entradaColor) {
+        color = entradaColor;
     }
 
-    // Método para ver el nivel de gasolina
-    public void verGasolina() {
-        System.out.println("Nivel de gasolina: " + gasolina + "%");
-    }
-
-    // Setter del color
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    // Getter del color
     public String getColor() {
         return color;
     }
